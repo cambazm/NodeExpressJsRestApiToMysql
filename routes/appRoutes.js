@@ -4,7 +4,6 @@ module.exports = function(app) {
 
   app.route('/data')
     .get(data.list_all_data)
-    .get(data.report_data)
     .post(data.create_a_data);
     
   app.route('/report')
